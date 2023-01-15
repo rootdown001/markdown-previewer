@@ -1,0 +1,20 @@
+# create a reat project
+mkdir "PROJECT"
+cd PROJECT
+npx create-react-app .
+
+# set up directories
+# group components & css
+    mkdir components
+    mkdir css
+    move App.js to components
+    move logo.svg to components
+    move App.css to css
+    move index.css to css
+    change import in App.js to import '../css/App.css';
+    change import in index.js to import '../css/index.css';
+
+
+
+### TO GET FCC BUNDLE.JS TO RUN ### 
+put <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> in index.html file right before </body>
