@@ -6,20 +6,20 @@ import { marked } from 'marked';
 
 export default function Previewer() {
  
+  const options = {
+    gfm: true
+  };
+ 
 
- const toMark = marked.parse('#Hello world');
+
+ const html = marked('# Hello world', options);
 
   return (
     <div>
       <div className="holder-previewer">
         <div>Previewer</div>
-        <textarea
-          name="previewer"
-          id="previewer"
-          className="previewer__textarea"
-          value={toMark}
-        /> 
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </div>
   )
-}
+} 

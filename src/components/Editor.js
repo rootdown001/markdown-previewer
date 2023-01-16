@@ -12,7 +12,7 @@ export default function Editor() {
             name="editor"
             id="editor"
             className="editor__textarea"
-            value="Starting value"
+            value='#Hello world'
           />
         </div> 
     </div>
