@@ -1,8 +1,14 @@
 import React from "react";
+import { marked } from 'marked';
+
 
 
 
 export default function Previewer() {
+ 
+
+ const toMark = marked.parse('#Hello world');
+
   return (
     <div>
       <div className="holder-previewer">
@@ -11,7 +17,7 @@ export default function Previewer() {
           name="previewer"
           id="previewer"
           className="previewer__textarea"
-          value="Starting value"
+          value={toMark}
         /> 
       </div>
     </div>
