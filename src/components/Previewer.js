@@ -4,7 +4,7 @@ import { marked } from 'marked';
 
 
 
-export default function Previewer() {
+export default function Previewer({editText}) {
  
   const options = {
     gfm: true
@@ -12,13 +12,13 @@ export default function Previewer() {
  
 
 
- const html = marked('# Hello world', options);
+ const html = marked(editText, options);
 
   return (
     <div>
       <div className="holder-previewer">
         <div>Previewer</div>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <div className="previewer__div" dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </div>
   )

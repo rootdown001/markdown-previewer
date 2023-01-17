@@ -2,7 +2,10 @@ import React from "react";
 
 
 
-export default function Editor() {
+export default function Editor({editText, handleChange}) {
+
+
+
   return (
     <div>
         
@@ -12,7 +15,8 @@ export default function Editor() {
             name="editor"
             id="editor"
             className="editor__textarea"
-            value='#Hello world'
+            value={editText}
+            onChange={(e) => handleChange(e)}
           />
         </div> 
     </div>
