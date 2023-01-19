@@ -7,7 +7,9 @@ import Previewer from './Previewer';
 function App() {
  
   const initialText = 
-    '# Markdown Previewer\r\n'
+    '\r\n'
+    + '# Markdown Previewer\r\n'
+
     + '## GitHub Flavored Markdown\r\n'
     + 'You can checkout [markedjs](https://github.com/markedjs/marked) on GitHub.\r\n'
     + '>⚖️ light-weight while implementing all markdown features\r\n'

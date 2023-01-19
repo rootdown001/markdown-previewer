@@ -7,7 +7,9 @@ import { marked } from 'marked';
 export default function Previewer({editText}) {
  
   const options = {
-    gfm: true
+    renderer: new marked.Renderer(),
+    gfm: true,
+    breaks: true
   };
  
 
@@ -18,7 +20,7 @@ export default function Previewer({editText}) {
     <div>
       <div className="holder-previewer">
         <div className="header-box">Previewer</div>
-        <div className="previewer__div" dangerouslySetInnerHTML={{ __html: html }} />
+        <div id="preview" className="previewer__div" dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </div>
   )
