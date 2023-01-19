@@ -17,7 +17,7 @@ export default function Previewer({editText}) {
   return (
     <div>
       <div className="holder-previewer">
-        <div>Previewer</div>
+        <div className="header-box">Previewer</div>
         <div className="previewer__div" dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </div>

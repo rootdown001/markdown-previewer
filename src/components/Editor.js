@@ -10,7 +10,7 @@ export default function Editor({editText, handleChange}) {
     <div>
         
         <div className="holder-editor">
-          <div>Editor</div>
+          <div className='header-box'>Editor</div>
           <textarea
             name="editor"
             id="editor"
