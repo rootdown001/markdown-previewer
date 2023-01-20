@@ -81,8 +81,8 @@ pre {
 }
 code {
   font-family: 'Courier New', monospace;
-  background-color: white;
-  font-weight: bold;
+  background-color: black;
+
   color: #333333;
   font-size: 0.875rem;
 }
