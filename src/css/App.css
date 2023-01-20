@@ -10,7 +10,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  background-color: white;
+  background-color: black;
   color: black;
 }
 
@@ -19,11 +19,12 @@ body {
 }
  
 .header-box {
-  border-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
   border-style: solid;
   border-width:2px;
-  border-color: black; 
-  background-color: hsl(208, 17%, 80%);
+  border-color: limegreen; 
+  background-color: limegreen;
   padding-left: 4px;
 }
 
@@ -31,7 +32,7 @@ body {
 .holder-editor {
   width: 80%;
   height: 400px;
-  margin: 4% auto;
+  margin: 1.125rem auto;
   font-size: 1rem;
 
 }
@@ -40,10 +41,11 @@ body {
   width: 100%;
   height: 400px;
   padding:6px;
-  border-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
   border-style: solid;
   border-width:2px;
-  border-color: black; 
+  border-color: limegreen; 
   background-color: hsl(208, 17%, 90%);
   overflow-y: scroll;
   resize: none;
@@ -53,18 +55,19 @@ body {
 .holder-previewer {
   max-width: 80%;
   height: 600px;
-  margin: 10% auto;
+  margin: 50px auto;
 }
 
 #preview {
   max-width: 100%;
   height: 600px;
   padding:6px;
-  border-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
   border-style: solid;
   border-width:2px;
   background-color: hsl(208, 17%, 90%);
-  border-color: black; 
+  border-color: limegreen; 
   overflow-y: scroll;
 }
 
