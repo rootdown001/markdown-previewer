@@ -32,7 +32,9 @@ body {
 .holder-editor {
   width: 80%;
   height: 400px;
-  margin: 1.125rem auto;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 1rem;
 
 }
@@ -55,7 +57,9 @@ body {
 .holder-previewer {
   max-width: 80%;
   height: 600px;
-  margin: 50px auto;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #preview {
@@ -98,4 +102,24 @@ img {
   display: block;
   max-width: 90%;
   margin: 2rem auto;
+}
+
+.editor__clear-button-container {
+
+  font-size: 1rem;
+  text-align: right;
+}
+
+.btn {
+  padding: 0;
+  background: limegreen;
+  outline: none;
+  border: none;
+  font-size: 0.8rem;
+  border-radius: 3px;
+  color: black;
+}
+
+.editor__clear-button {
+  padding: 3px;
 }

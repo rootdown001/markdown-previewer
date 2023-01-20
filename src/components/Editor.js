@@ -18,8 +18,7 @@ export default function Editor({editText, handleChange, handleEditorClear}) {
             value={editText}
             onChange={(e) => handleChange(e)}
           />
-        </div> 
-        <div className="editor__clear-button-container">
+           <div className="editor__clear-button-container">
           <button 
             className="btn editor__clear-button"
             onClick={() => handleEditorClear()}
@@ -27,6 +26,8 @@ export default function Editor({editText, handleChange, handleEditorClear}) {
             Clear Editor
           </button>
         </div>
+        </div> 
+       
     </div>
   )
 }
