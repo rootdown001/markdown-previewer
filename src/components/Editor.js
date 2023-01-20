@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-export default function Editor({editText, handleChange}) {
+export default function Editor({editText, handleChange, handleEditorClear}) {
 
 
 
@@ -19,6 +19,14 @@ export default function Editor({editText, handleChange}) {
             onChange={(e) => handleChange(e)}
           />
         </div> 
+        <div className="editor__clear-button-container">
+          <button 
+            className="btn editor__clear-button"
+            onClick={() => handleEditorClear()}
+          >
+            Clear Editor
+          </button>
+        </div>
     </div>
   )
 }

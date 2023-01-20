@@ -26,12 +26,17 @@ function App() {
     setEditText(e.target.value);
   }
 
+  function handleEditorClear() {
+    setEditText("")
+  } 
+
 
   return (
     <>
       <Editor 
         editText={editText}
-        handleChange={handleChange}        
+        handleChange={handleChange}
+        handleEditorClear={handleEditorClear}        
       />
       <Previewer 
         editText={editText}
